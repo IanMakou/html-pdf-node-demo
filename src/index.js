@@ -5,7 +5,7 @@ const fs = require('fs')
 const path = require('path')
 
 const app = express()
-const port = 3000
+const port = 5000
 
 const template = fs.readFileSync(path.resolve(__dirname, "./index.html"), 'utf8')
 const content = ejs.render(template, { title: "Awesome title!" })
